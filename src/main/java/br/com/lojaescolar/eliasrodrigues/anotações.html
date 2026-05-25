@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p>
+        p.getNome()               // só retorna "Caderno", não faz nada visível
+        System.out.println(p.getNome()) // aí sim exibe — mas o print está FORA do getter
+        String x = p.getNome()   // também válido: guardei o valor numa variável
+
+        <br>
+
+        Produto p = new Produto("Caderno", 15.90);
+        // p.nome agora é "Caderno"
+
+        p.setNome("Borracha");
+        // p.nome agora é "Borracha" — o valor anterior foi substituído
+
+        System.out.println(p.getNome()); // imprime: Borracha
+
+        <br>
+
+        Atributo privado: nome = "Caderno"
+        ↑ só a própria classe enxerga
+
+        getNome() → te entrega o valor pra você usar como quiser
+        setNome() → entra, substitui o valor, sai
+    </p>
+</head>
+<body>
+
+</body>
+</html>
