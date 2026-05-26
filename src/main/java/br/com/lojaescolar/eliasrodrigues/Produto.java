@@ -24,4 +24,8 @@ public class Produto {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    public void exibirDetalhes(){
+        System.out.println("Produto: "+nome+ " - preço " +preco);
+    }
 }
